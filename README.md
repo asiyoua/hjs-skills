@@ -49,6 +49,8 @@ cp config.example.yml config.yml
 # Edit config.yml with your settings
 ```
 
+**Feishu Base Setup Guide**: [https://www.feishu.cn/content/article/7623291503305083853](https://www.feishu.cn/content/article/7623291503305083853)
+
 See `daily-notes-template/README.md` for detailed setup instructions.
 
 ## About
@@ -101,6 +103,8 @@ cd ~/.claude/plugins/hjs-skills/skills/daily-notes-template
 cp config.example.yml config.yml
 # 编辑 config.yml 填入你的配置
 ```
+
+**飞书 Base 配置指南**：[https://www.feishu.cn/content/article/7623291503305083853](https://www.feishu.cn/content/article/7623291503305083853)
 
 详细设置说明见 `daily-notes-template/README.md`。
 
