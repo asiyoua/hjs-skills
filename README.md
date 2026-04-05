@@ -31,7 +31,17 @@ Then restart Claude Code.
 
 ### daily-notes-template Dependencies
 
-The `daily-notes-template` skill requires Feishu Base configuration:
+The `daily-notes-template` skill requires **lark-cli** for Feishu Base operations:
+
+```bash
+# Install lark-cli
+npm install -g @larksuite/cli
+
+# Login to your Feishu account
+lark-cli login
+```
+
+Then configure your Feishu Base:
 
 ```bash
 cd ~/.claude/plugins/hjs-skills/skills/daily-notes-template
@@ -74,7 +84,17 @@ git clone https://github.com/asiyoua/hjs-skills.git ~/.claude/plugins/hjs-skills
 
 ### daily-notes-template 依赖
 
-`daily-notes-template` 技能需要配置飞书 Base：
+`daily-notes-template` 技能需要安装 **lark-cli** 来操作飞书 Base：
+
+```bash
+# 安装 lark-cli
+npm install -g @larksuite/cli
+
+# 登录你的飞书账号
+lark-cli login
+```
+
+然后配置飞书 Base：
 
 ```bash
 cd ~/.claude/plugins/hjs-skills/skills/daily-notes-template
