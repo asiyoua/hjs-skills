@@ -1,0 +1,76 @@
+# Daily Notes Template Configuration
+# Copy this file to config.yml and fill in your values
+
+# Daily Notes Configuration
+daily_notes:
+  # Directory for daily note files (use ~ for home directory)
+  output_dir: "~/MyWorkspace/Knowledge/Obsidian/DailyNotes"
+
+  # File name pattern (supports {date} placeholder)
+  file_pattern: "daily_note_{date}.md"
+
+  # Date format for file names (strftime format)
+  date_format: "%Y%m%d"
+
+  # Editor to open daily notes
+  # Options: "Zed", "code" (VS Code), "vim", "nvim", etc.
+  editor: "Zed"
+
+# Feishu Base Configuration
+feishu:
+  # Your Feishu Base token
+  # Get from: Base URL -> the token after /base/
+  base_token: "YOUR_BASE_TOKEN"
+
+  # Table ID for todos
+  # Get from: Base URL -> the value after ?table=
+  table_id: "YOUR_TABLE_ID"
+
+  # Table name (for reference only)
+  table_name: "待办任务"
+
+  # Full URL to your Base table
+  # Format: https://my.feishu.cn/base/{BASE_TOKEN}?table={TABLE_ID}
+  base_url: "https://my.feishu.cn/base/YOUR_BASE_TOKEN?table=YOUR_TABLE_ID"
+
+# Todo Field Mapping
+# Map your actual field names in Feishu Base
+fields:
+  title: "标题"      # text field, required
+  type: "类型"       # select field: 待办/任务/行动/里程碑
+  status: "状态"     # select field: 待处理/进行中/已完成/已搁置
+  priority: "优先级" # select field: 高/中/低
+  category: "分类"   # select field: 工作/学习/生活/健康/内容创作/职业发展
+  deadline: "截止日期" # datetime field, optional
+  notes: "备注"      # text field, optional
+
+# Optional: Custom keyword patterns for todo detection
+# You can add/remove keywords based on your needs
+todo_patterns:
+  time_keywords:
+    - "明天"
+    - "本周"
+    - "下周"
+    - "下周"
+  action_keywords:
+    - "做"
+    - "写"
+    - "准备"
+    - "搞定"
+    - "完成"
+    - "联系"
+  importance_markers:
+    - "🔥"
+    - "紧急"
+    - "重要"
+  category_mapping:
+    - pattern: "工作|本职|公司"
+      category: "工作"
+    - pattern: "学|课程|训练营"
+      category: "学习"
+    - pattern: "健康|医院|复查"
+      category: "健康"
+    - pattern: "发帖|内容|公众号|小红书"
+      category: "内容创作"
+    - pattern: "大会|职业"
+      category: "职业发展"

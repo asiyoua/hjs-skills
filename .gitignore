@@ -1,0 +1,12 @@
+# User data - keep local
+skills/dev-pitfall-logger/references/logs/
+skills/daily-notes-template/config.yml
+
+# System files
+.DS_Store
+*.swp
+*~
+
+# Editor files
+.vscode/
+.idea/
